@@ -1,40 +1,18 @@
-import java.util.Scanner;
-import java.util.Stack;
-
 public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
         System.out.println("Welcome to Palindrome Checker App");
 
-        Scanner scanner = new Scanner(System.in);
+        // Hardcoded word
+        String word = "madam";
 
-        System.out.print("Enter a word: ");
-        String word = scanner.nextLine().toLowerCase();
+        String reversed = new StringBuilder(word).reverse().toString();
 
-        Stack<Character> stack = new Stack<>();
-
-        // Push all characters onto stack
-        for (int i = 0; i < word.length(); i++) {
-            stack.push(word.charAt(i));
-        }
-
-        boolean isPalindrome = true;
-
-        // Compare by popping
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) != stack.pop()) {
-                isPalindrome = false;
-                break;
-            }
-        }
-
-        if (isPalindrome) {
+        if (word.equalsIgnoreCase(reversed)) {
             System.out.println(word + " is a palindrome.");
         } else {
             System.out.println(word + " is NOT a palindrome.");
         }
-
-        scanner.close();
     }
 }
