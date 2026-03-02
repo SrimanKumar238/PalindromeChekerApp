@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.LinkedList;
 
 public class PalindromeCheckerApp {
 
@@ -12,33 +11,29 @@ public class PalindromeCheckerApp {
         System.out.print("Enter a word: ");
         String word = scanner.nextLine().toLowerCase();
 
-        LinkedList<Character> list = new LinkedList<>();
-
-        // Add characters to linked list
-        for (char ch : word.toCharArray()) {
-            list.add(ch);
-        }
-
-        boolean isPalindrome = true;
-
-        int start = 0;
-        int end = list.size() - 1;
-
-        while (start < end) {
-            if (!list.get(start).equals(list.get(end))) {
-                isPalindrome = false;
-                break;
-            }
-            start++;
-            end--;
-        }
-
-        if (isPalindrome) {
+        if (isPalindrome(word)) {
             System.out.println(word + " is a palindrome.");
         } else {
             System.out.println(word + " is NOT a palindrome.");
         }
 
         scanner.close();
+    }
+
+    // Recursive method
+    public static boolean isPalindrome(String str) {
+
+        // Base case
+        if (str.length() <= 1) {
+            return true;
+        }
+
+        // Compare first and last character
+        if (str.charAt(0) != str.charAt(str.length() - 1)) {
+            return false;
+        }
+
+        // Recursive call (remove first and last character)
+        return isPalindrome(str.substring(1, str.length() - 1));
     }
 }
