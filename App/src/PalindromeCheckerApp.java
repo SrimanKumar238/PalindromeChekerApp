@@ -8,32 +8,34 @@ public class PalindromeCheckerApp {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a word: ");
-        String word = scanner.nextLine().toLowerCase();
+        System.out.print("Enter a sentence: ");
+        String input = scanner.nextLine();
 
-        if (isPalindrome(word)) {
-            System.out.println(word + " is a palindrome.");
+        // Remove spaces and convert to lowercase
+        String cleaned = input.replaceAll("\\s+", "").toLowerCase();
+
+        if (isPalindrome(cleaned)) {
+            System.out.println("\"" + input + "\" is a palindrome.");
         } else {
-            System.out.println(word + " is NOT a palindrome.");
+            System.out.println("\"" + input + "\" is NOT a palindrome.");
         }
 
         scanner.close();
     }
 
-    // Recursive method
     public static boolean isPalindrome(String str) {
 
-        // Base case
-        if (str.length() <= 1) {
-            return true;
+        int start = 0;
+        int end = str.length() - 1;
+
+        while (start < end) {
+            if (str.charAt(start) != str.charAt(end)) {
+                return false;
+            }
+            start++;
+            end--;
         }
 
-        // Compare first and last character
-        if (str.charAt(0) != str.charAt(str.length() - 1)) {
-            return false;
-        }
-
-        // Recursive call (remove first and last character)
-        return isPalindrome(str.substring(1, str.length() - 1));
+        return true;
     }
 }
