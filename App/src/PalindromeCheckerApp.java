@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class StrategyPalindromeApp {
+public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
@@ -11,29 +11,32 @@ public class StrategyPalindromeApp {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
 
-        PalindromeContext context = new PalindromeContext();
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Choose Algorithm:");
-        System.out.println("1. Reverse String Method");
-        System.out.println("2. Two Pointer Method");
+        System.out.print("Enter a word: ");
+        String word = scanner.nextLine();
 
-        int choice = scanner.nextInt();
+        char[] characters = word.toLowerCase().toCharArray();
 
-        if (choice == 1) {
-            context.setStrategy(new ReverseStringStrategy());
-        } else if (choice == 2) {
-            context.setStrategy(new TwoPointerStrategy());
+        boolean isPalindrome = true;
+
+        int start = 0;
+        int end = characters.length - 1;
+
+        while (start < end) {
+            if (characters[start] != characters[end]) {
+                isPalindrome = false;
+                break;
+            }
+            start++;
+            end--;
+        }
+
+        if (isPalindrome) {
+            System.out.println(word + " is a palindrome.");
         } else {
             System.out.println("Invalid choice");
             return;
-        }
-
-        boolean result = context.checkPalindrome(input);
-
-        if (result) {
-            System.out.println("Result: It is a Palindrome");
-        } else {
-            System.out.println("Result: Not a Palindrome");
         }
 
         scanner.close();
