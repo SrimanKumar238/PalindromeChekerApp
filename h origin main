@@ -1,0 +1,30 @@
+[33mb6f3034[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m UC12: Strategy Pattern for Palindrome Algorithms implemented
+[33m9bb31af[m UC12: Strategy Pattern for Palindrome Algorithms implemented
+[33m3345fb4[m Merge pull request #13 from SrimanKumar238/UC11ObjectOrientedPalindromeService
+[33mc0c8ab2[m[33m ([m[1;31morigin/UC11ObjectOrientedPalindromeService[m[33m)[m UC11: Object-Oriented Palindrome Service implementation
+[33m1f1b902[m Merge pull request #12 from SrimanKumar238/UC10CaseInsensitiveSpaceIgnoredPalindrome
+[33m156ea43[m[33m ([m[1;31morigin/UC10CaseInsensitiveSpaceIgnoredPalindrome[m[33m)[m UC10: Case-insensitive and space-ignored palindrome
+[33m3bc119c[m Merge pull request #11 from SrimanKumar238/UC9RecursivePalindromeChecker
+[33m4dc1190[m[33m ([m[1;31morigin/UC9RecursivePalindromeChecker[m[33m)[m UC9: Recursive palindrome checker
+[33mf14d3ce[m[33m ([m[1;31morigin/UC8-1LinkedListBasedPalindromeChecker[m[33m)[m Merge pull request #10 from SrimanKumar238/UC8LinkedListBasedPalindromeChecker
+[33m96ca30e[m UC8: LinkedList based palindrome checker
+[33m6f5ff9c[m Merge pull request #9 from SrimanKumar238/UC7DequeBasedOptimizedPalindromeChecker
+[33m37bad62[m[33m ([m[1;31morigin/UC7DequeBasedOptimizedPalindromeChecker[m[33m)[m UC7: Deque-based optimized palindrome checker
+[33medc08d6[m Resolved merge conflict - kept UC6 final version
+[33m420eac7[m[33m ([m[1;31morigin/UC6QueueStackBasedPalindromeCheck[m[33m)[m UC6: Queue + Stack based palindrome check
+[33mc8dfc83[m Merge pull request #7 from SrimanKumar238/UC5StackBasedPalindromeChecker
+[33m4512cd0[m[33m ([m[1;31morigin/UC5StackBasedPalindromeChecker[m[33m)[m Merge branch 'main' into UC5StackBasedPalindromeChecker
+[33m91d46df[m UC5: Stack-based palindrome checker
+[33m41c40b0[m Merge pull request #5 from SrimanKumar238/UC3PalindromeCheckUsingStringReverse
+[33m6a5bc85[m[33m ([m[1;31morigin/UC3PalindromeCheckUsingStringReverse[m[33m)[m UC3: Palindrome check using string reverse
+[33m8e56c22[m Merge pull request #4 from SrimanKumar238/UC2PrintaHardcodedPalindromeResult
+[33m5e20da1[m[33m ([m[1;31morigin/UC2PrintaHardcodedPalindromeResult[m[33m)[m UC2: Print a hardcoded palindrome result
+[33m3356f3c[m UC2: Print a hardcoded palindrome result
+[33m21dfb36[m Merge pull request #3 from SrimanKumar238/ApplicationEntryandWelcomeMessage
+[33m401b4cf[m[33m ([m[1;31morigin/ApplicationEntryandWelcomeMessage[m[33m)[m Final UC1 update
+[33m31f44c5[m Updated PalindromeCheckerApp
+[33m795708c[m Merge pull request #2 from SrimanKumar238/UC2-HardCodePalidrome
+[33m9c7653f[m[33m ([m[1;31morigin/UC2-HardCodePalidrome[m[33m)[m UC1-WelcomeMessage Added UsecaseName
+[33m14f568e[m Merge pull request #1 from SrimanKumar238/UC1-WelcomeMessage
+[33m763e132[m[33m ([m[1;31morigin/UC1-WelcomeMessage[m[33m)[m [UC1-WelcomeMessage] Added [UC1-WelcomeMessage]
+[33m3a079dd[m Initial commit
