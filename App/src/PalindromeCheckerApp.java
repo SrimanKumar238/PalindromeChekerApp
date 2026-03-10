@@ -4,7 +4,12 @@ public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Palindrome Checker App");
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Palindrome Checker - Strategy Pattern");
+
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -30,7 +35,8 @@ public class PalindromeCheckerApp {
         if (isPalindrome) {
             System.out.println(word + " is a palindrome.");
         } else {
-            System.out.println(word + " is NOT a palindrome.");
+            System.out.println("Invalid choice");
+            return;
         }
 
         scanner.close();
